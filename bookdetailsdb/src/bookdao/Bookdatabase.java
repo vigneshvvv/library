@@ -83,6 +83,24 @@ public class Bookdatabase {
 		}
 		
 	}
-	
+
+	//public void updatebooklist(Books book,String column)
+	//{
+		//try
+		//{
+			//Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			//conn = DriverManager.getConnection(hostname,user,password);
+			//String query= "update books set #COLUMN# =? where id=?";
+			//query= query.replace("#COLUMN#", column);
+			//PreparedStatement ps= conn.prepareStatement(query);
+			
+			//switch(column)
+			//{//
+			//case "book_name":
+					
+			//}
+		//}/
+	//}
 
 }

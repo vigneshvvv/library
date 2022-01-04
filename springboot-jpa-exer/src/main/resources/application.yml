@@ -1,0 +1,23 @@
+server:
+  port: 7005
+  servlet:
+    context-path: /library
+    
+spring:
+  datasource:
+    username: root
+    password: 'Vignesh333#'
+    url: jdbc:mysql://localhost:3306/javatrainingpro
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+    jpa:
+      show-sql: true
+      
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+          
+         
+
+
+  
