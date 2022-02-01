@@ -3,6 +3,8 @@ package com.example.firstapp.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name= "books")
@@ -10,7 +12,13 @@ public class Books {
 	
 	@Id
 	private Integer id;
+	
+	@NotBlank(message="the name should not be blank")
+	@Size(min=3, max=20 , message = "the bookname size is not valid")
 	private String  bookName;
+	
+	@NotBlank(message= "the author name should not be blank")
+	@Size( min = 3, max = 20, message= "the size of author name is not valid")
 	private String author;
 	private Integer price;
 	

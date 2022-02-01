@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.example.firstapp.model.Login;
 import com.example.firstapp.repo.Loginrepo;
@@ -36,29 +38,41 @@ public class Logincontroller {
 		return loginservice.getuser();
 	}
 	
-//	@PostMapping("/logindetails")
-//	public ResponseEntity<String> getuser(@RequestParam String username,@RequestParam  String pass)
-//	{ 
-//		String status= (loginservice.getuserd( username, pass)!= null) ? "success" : "failed";
-//		return new ResponseEntity<String>(HttpStatus.ACCEPTED);
-//	}
-	
-	@Autowired
-	Loginrepo loginrepo;
 	@PostMapping("/logindetails")
-	public String getuser(@RequestParam ("username") String username)
+	public ResponseEntity<String> getuser(@RequestParam String username,@RequestParam  String pass)
 	{ 
-		try {
-			loginrepo.findByusername(username);
-		}
-		catch (Exception e) {
-			System.out.println("user not found");
-		}
-		return"login";
+		String status= (loginservice.getuserd( username, pass)!= null) ? "success" : "failed";
+		return new ResponseEntity<String>(HttpStatus.ACCEPTED);
+	}
+	
+//	@Autowired
+//	Loginrepo loginrepo;
+//	@PostMapping("/logindetails")
+//	@ResponseBody
+//	public Login getuser(@RequestParam ("username") String username)
+//	{ 
+//	
+//		return loginrepo.findByusername(username);
 		
+//		if(log != 0)
+//		{
+//			mv.addObject("the login user is found")
+//		}
+//		else
+//		{
+//			
+//		}
+//		try {
+//			loginrepo.findByusername(username);
+//		}
+//		catch (Exception e) {
+//			System.out.println("user not found");
+//		}
+//		return"login";
+//		
 	}
 	
 	
 	
 
-}
+

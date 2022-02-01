@@ -1,0 +1,236 @@
+2022-01-29 00:09:16.475  INFO 9880 --- [main] .SpringbootJpaCustomerdetailsApplication : Starting SpringbootJpaCustomerdetailsApplication using Java 11.0.13 on vignesh-Vostro-3581 with PID 9880 (/home/vignesh/Desktop/git/library/springboot-jpa-customerdetails/target/classes started by vignesh in /home/vignesh/Desktop/git/library/springboot-jpa-customerdetails)
+2022-01-29 00:09:16.497  INFO 9880 --- [main] .SpringbootJpaCustomerdetailsApplication : No active profile set, falling back to default profiles: default
+2022-01-29 00:09:21.854  INFO 9880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-29 00:09:21.950  INFO 9880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2022-01-29 00:09:23.904  INFO 9880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7007 (http)
+2022-01-29 00:09:23.913  INFO 9880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-29 00:09:23.913  INFO 9880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-29 00:09:23.915  WARN 9880 --- [main] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-29 00:09:23.915  INFO 9880 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-29 00:09:23.916  INFO 9880 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-29 00:09:23.916  INFO 9880 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-29 00:09:23.916  INFO 9880 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-29 00:09:24.185  INFO 9880 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-01-29 00:09:24.438  INFO 9880 --- [main] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring embedded WebApplicationContext
+2022-01-29 00:09:24.438  INFO 9880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7100 ms
+2022-01-29 00:09:24.881  INFO 9880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-29 00:09:26.536  INFO 9880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-29 00:09:27.008  INFO 9880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-29 00:09:28.212  INFO 9880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-29 00:09:29.524  INFO 9880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-29 00:09:30.024  INFO 9880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-29 00:09:32.819  INFO 9880 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-29 00:09:32.880  INFO 9880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:09:33.682  WARN 9880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-29 00:09:34.607  WARN 9880 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-29 00:09:35.008  WARN 9880 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 7007 is already in use
+2022-01-29 00:09:35.010  INFO 9880 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:09:35.012  INFO 9880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-29 00:09:35.023  INFO 9880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-29 00:09:35.025  INFO 9880 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-29 00:09:35.112  INFO 9880 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-29 00:09:35.182 ERROR 9880 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 7007 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 7007 or configure this application to listen on another port.
+
+2022-01-29 00:09:48.454  INFO 9937 --- [main] .SpringbootJpaCustomerdetailsApplication : Starting SpringbootJpaCustomerdetailsApplication using Java 11.0.13 on vignesh-Vostro-3581 with PID 9937 (/home/vignesh/Desktop/git/library/springboot-jpa-customerdetails/target/classes started by vignesh in /home/vignesh/Desktop/git/library/springboot-jpa-customerdetails)
+2022-01-29 00:09:48.457  INFO 9937 --- [main] .SpringbootJpaCustomerdetailsApplication : No active profile set, falling back to default profiles: default
+2022-01-29 00:09:49.391  INFO 9937 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-29 00:09:49.438  INFO 9937 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2022-01-29 00:09:50.081  INFO 9937 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7007 (http)
+2022-01-29 00:09:50.090  INFO 9937 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-29 00:09:50.091  INFO 9937 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-29 00:09:50.092  WARN 9937 --- [main] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-29 00:09:50.093  INFO 9937 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-29 00:09:50.093  INFO 9937 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-29 00:09:50.094  INFO 9937 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-29 00:09:50.094  INFO 9937 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-29 00:09:50.097  INFO 9937 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-01-29 00:09:50.198  INFO 9937 --- [main] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring embedded WebApplicationContext
+2022-01-29 00:09:50.199  INFO 9937 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1676 ms
+2022-01-29 00:09:50.375  INFO 9937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-29 00:09:50.729  INFO 9937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-29 00:09:50.786  INFO 9937 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-29 00:09:50.819  INFO 9937 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-29 00:09:50.938  INFO 9937 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-29 00:09:51.027  INFO 9937 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-29 00:09:51.763  INFO 9937 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-29 00:09:51.773  INFO 9937 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:09:52.306  WARN 9937 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-29 00:09:52.796  WARN 9937 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-29 00:09:52.945  WARN 9937 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 7007 is already in use
+2022-01-29 00:09:52.947  INFO 9937 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:09:52.949  INFO 9937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-29 00:09:53.007  INFO 9937 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-29 00:09:53.011  INFO 9937 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-29 00:09:53.036  INFO 9937 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-29 00:09:53.059 ERROR 9937 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 7007 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 7007 or configure this application to listen on another port.
+
+2022-01-29 00:10:22.130  INFO 9978 --- [main] .SpringbootJpaCustomerdetailsApplication : Starting SpringbootJpaCustomerdetailsApplication using Java 11.0.13 on vignesh-Vostro-3581 with PID 9978 (/home/vignesh/Desktop/git/library/springboot-jpa-customerdetails/target/classes started by vignesh in /home/vignesh/Desktop/git/library/springboot-jpa-customerdetails)
+2022-01-29 00:10:22.132  INFO 9978 --- [main] .SpringbootJpaCustomerdetailsApplication : No active profile set, falling back to default profiles: default
+2022-01-29 00:10:23.089  INFO 9978 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-29 00:10:23.137  INFO 9978 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2022-01-29 00:10:23.668  INFO 9978 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7007 (http)
+2022-01-29 00:10:23.676  INFO 9978 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-29 00:10:23.676  INFO 9978 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-29 00:10:23.678  WARN 9978 --- [main] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-29 00:10:23.678  INFO 9978 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-29 00:10:23.679  INFO 9978 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-29 00:10:23.679  INFO 9978 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-29 00:10:23.679  INFO 9978 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-29 00:10:23.682  INFO 9978 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-01-29 00:10:23.775  INFO 9978 --- [main] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring embedded WebApplicationContext
+2022-01-29 00:10:23.776  INFO 9978 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1592 ms
+2022-01-29 00:10:23.889  INFO 9978 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-29 00:10:24.279  INFO 9978 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-29 00:10:24.322  INFO 9978 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-29 00:10:24.355  INFO 9978 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-29 00:10:24.479  INFO 9978 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-29 00:10:24.603  INFO 9978 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-29 00:10:25.212  INFO 9978 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-29 00:10:25.224  INFO 9978 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:10:25.704  WARN 9978 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-29 00:10:25.991  WARN 9978 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-29 00:10:26.096  WARN 9978 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 7007 is already in use
+2022-01-29 00:10:26.099  INFO 9978 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:10:26.101  INFO 9978 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-29 00:10:26.119  INFO 9978 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-29 00:10:26.122  INFO 9978 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-29 00:10:26.135  INFO 9978 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-29 00:10:26.150 ERROR 9978 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 7007 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 7007 or configure this application to listen on another port.
+
+2022-01-29 00:10:40.833  INFO 10020 --- [main] .SpringbootJpaCustomerdetailsApplication : Starting SpringbootJpaCustomerdetailsApplication using Java 11.0.13 on vignesh-Vostro-3581 with PID 10020 (/home/vignesh/Desktop/git/library/springboot-jpa-customerdetails/target/classes started by vignesh in /home/vignesh/Desktop/git/library/springboot-jpa-customerdetails)
+2022-01-29 00:10:40.835  INFO 10020 --- [main] .SpringbootJpaCustomerdetailsApplication : No active profile set, falling back to default profiles: default
+2022-01-29 00:10:41.794  INFO 10020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-29 00:10:41.859  INFO 10020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2022-01-29 00:10:42.490  INFO 10020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7009 (http)
+2022-01-29 00:10:42.500  INFO 10020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-29 00:10:42.501  INFO 10020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-29 00:10:42.503  WARN 10020 --- [main] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-29 00:10:42.504  INFO 10020 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-29 00:10:42.504  INFO 10020 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-29 00:10:42.504  INFO 10020 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-29 00:10:42.505  INFO 10020 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-29 00:10:42.513  INFO 10020 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-01-29 00:10:42.592  INFO 10020 --- [main] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring embedded WebApplicationContext
+2022-01-29 00:10:42.592  INFO 10020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1704 ms
+2022-01-29 00:10:42.704  INFO 10020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-29 00:10:43.347  INFO 10020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-29 00:10:43.395  INFO 10020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-29 00:10:43.435  INFO 10020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-29 00:10:43.555  INFO 10020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-29 00:10:43.641  INFO 10020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-29 00:10:44.160  INFO 10020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-29 00:10:44.167  INFO 10020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:10:44.581  WARN 10020 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-29 00:10:44.862  WARN 10020 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-29 00:10:45.082  INFO 10020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7009 (http) with context path '/details'
+2022-01-29 00:10:45.108  INFO 10020 --- [main] .SpringbootJpaCustomerdetailsApplication : Started SpringbootJpaCustomerdetailsApplication in 4.666 seconds (JVM running for 5.446)
+2022-01-29 00:14:39.683  INFO 10020 --- [http-nio-7009-exec-1] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-29 00:14:39.704  INFO 10020 --- [http-nio-7009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-29 00:14:39.709  INFO 10020 --- [http-nio-7009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-01-29 00:23:12.905  INFO 10020 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-01-29 00:23:13.988  INFO 10020 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 00:23:14.698  INFO 10020 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-29 00:23:15.181  INFO 10020 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-29 08:00:27.395  INFO 4744 --- [main] .SpringbootJpaCustomerdetailsApplication : Starting SpringbootJpaCustomerdetailsApplication using Java 11.0.13 on vignesh-Vostro-3581 with PID 4744 (/home/vignesh/Desktop/git/library/springboot-jpa-customerdetails/target/classes started by vignesh in /home/vignesh/Desktop/git/library/springboot-jpa-customerdetails)
+2022-01-29 08:00:27.398  INFO 4744 --- [main] .SpringbootJpaCustomerdetailsApplication : No active profile set, falling back to default profiles: default
+2022-01-29 08:00:29.163  INFO 4744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-29 08:00:29.242  INFO 4744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2022-01-29 08:00:30.273  INFO 4744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7009 (http)
+2022-01-29 08:00:30.281  INFO 4744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-29 08:00:30.281  INFO 4744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-29 08:00:30.283  WARN 4744 --- [main] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-29 08:00:30.283  INFO 4744 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-29 08:00:30.284  INFO 4744 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-29 08:00:30.284  INFO 4744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-29 08:00:30.284  INFO 4744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-29 08:00:30.378  INFO 4744 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-01-29 08:00:30.516  INFO 4744 --- [main] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring embedded WebApplicationContext
+2022-01-29 08:00:30.516  INFO 4744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3034 ms
+2022-01-29 08:00:30.840  INFO 4744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-29 08:00:33.076  INFO 4744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-29 08:00:33.256  INFO 4744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-29 08:00:33.389  INFO 4744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-29 08:00:33.751  INFO 4744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-29 08:00:33.916  INFO 4744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-29 08:00:34.483  INFO 4744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-29 08:00:34.491  INFO 4744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 08:00:35.191  WARN 4744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-29 08:00:35.472  WARN 4744 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-29 08:00:35.696  INFO 4744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7009 (http) with context path '/details'
+2022-01-29 08:00:35.713  INFO 4744 --- [main] .SpringbootJpaCustomerdetailsApplication : Started SpringbootJpaCustomerdetailsApplication in 9.052 seconds (JVM running for 11.15)
+2022-01-29 08:05:53.904  INFO 4744 --- [http-nio-7009-exec-1] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-29 08:05:54.029  INFO 4744 --- [http-nio-7009-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-29 08:05:54.037  INFO 4744 --- [http-nio-7009-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-01-29 09:19:57.578  INFO 3480 --- [main] .SpringbootJpaCustomerdetailsApplication : Starting SpringbootJpaCustomerdetailsApplication using Java 11.0.13 on vignesh-Vostro-3581 with PID 3480 (/home/vignesh/Desktop/git/library/springboot-jpa-customerdetails/target/classes started by vignesh in /home/vignesh/Desktop/git/library/springboot-jpa-customerdetails)
+2022-01-29 09:19:57.646  INFO 3480 --- [main] .SpringbootJpaCustomerdetailsApplication : No active profile set, falling back to default profiles: default
+2022-01-29 09:20:00.335  INFO 3480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-29 09:20:00.458  INFO 3480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2022-01-29 09:20:02.028  INFO 3480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7009 (http)
+2022-01-29 09:20:02.036  INFO 3480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-29 09:20:02.036  INFO 3480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-29 09:20:02.038  WARN 3480 --- [main] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-29 09:20:02.038  INFO 3480 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-29 09:20:02.039  INFO 3480 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2022-01-29 09:20:02.039  INFO 3480 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-29 09:20:02.039  INFO 3480 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-29 09:20:02.171  INFO 3480 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-01-29 09:20:02.300  INFO 3480 --- [main] o.a.c.c.C.[.[localhost].[/details]       : Initializing Spring embedded WebApplicationContext
+2022-01-29 09:20:02.301  INFO 3480 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4575 ms
+2022-01-29 09:20:02.819  INFO 3480 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-29 09:20:05.064  INFO 3480 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-29 09:20:05.300  INFO 3480 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-29 09:20:06.847  INFO 3480 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-01-29 09:20:07.747  INFO 3480 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-29 09:20:08.263  INFO 3480 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-29 09:20:09.166  INFO 3480 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-29 09:20:09.195  INFO 3480 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 09:20:10.063  WARN 3480 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-29 09:20:10.618  WARN 3480 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-01-29 09:20:10.909  INFO 3480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7009 (http) with context path '/details'
+2022-01-29 09:20:10.933  INFO 3480 --- [main] .SpringbootJpaCustomerdetailsApplication : Started SpringbootJpaCustomerdetailsApplication in 14.479 seconds (JVM running for 18.129)
+2022-01-29 09:30:06.478  INFO 3480 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-01-29 09:30:07.017  INFO 3480 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-29 09:30:07.097  INFO 3480 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-29 09:30:07.497  INFO 3480 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -16,6 +16,10 @@ spring:
   jackson:
     serialization:
       fail-on-empty-beans: false
+      
+logging:
+  file:
+    name: library.log
           
          
 

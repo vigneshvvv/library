@@ -1,0 +1,24 @@
+server:
+  port: 7009
+  
+  servlet:
+    context-path: /details
+    
+spring:
+  datasource:
+    username: root
+    password: 'Vignesh333#'
+    url: jdbc:mysql://localhost:3306/customerdetails
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    show-sql: true
+    
+    
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+      
+logging:
+  file:
+    name: library.log
