@@ -19,7 +19,5 @@ public class Booksdaoimpl implements Booksdao {
 		
 		return book;
 	}
-
 	
-
 }

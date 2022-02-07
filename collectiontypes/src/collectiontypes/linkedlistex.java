@@ -8,7 +8,6 @@ public class linkedlistex {
 	public static void main(String[] args) {
 		
 		LinkedList<Integer> ll= new LinkedList<Integer>();
-		
 		ll.add(20);
 		ll.add(50);
 		ll.add(10);
@@ -18,11 +17,7 @@ public class linkedlistex {
 		{
 			System.out.println(ll.get(i));
 		}
-		
-		
-		
-		// TODO Auto-generated method stub
-
+				// TODO Auto-generated method stub
 	}
 
 }

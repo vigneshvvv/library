@@ -3,24 +3,27 @@ package Arrayprograms;
 public class Palindromestring {
 	public static void main(String[] args)
 	{
-		String str= "Radar";
+		String str= "RadaR";
 		String revstr="";
 		
-		int strleng= str.length();
+		int strlen= str.length();
 		
-		for(int i=(strleng-1); i>=0; --i)
+		for(int i=(strlen-1);i>=0;--i)
 		{
 			revstr=revstr+ str.charAt(i);
 		}
 		
 		if(str.toLowerCase().equals(revstr.toLowerCase()))
 		{
-			System.out.println("the string is palindrome");
+			System.out.println("the name is palindrome");
 		}
 		else
 		{
-			System.out.println("the string is not palindrome");
+			System.out.println("the number is not palindrome");
 		}
-	}
+		
 
+		
+		
+	}	
 }
